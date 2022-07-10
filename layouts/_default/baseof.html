@@ -5,6 +5,9 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width">
+{{ if .Site.Params.noindex }}
+	<meta name="robots" content="noindex" /> 
+{{ end }}
 	<title>{{ block "title" . }}{{ .Site.Title }}{{ end }}</title>
   <meta http-equiv="onion-location" content="http://5ninez4stpd6qc34dkfjzm5cuyw2n3x2k2jsbwmrapf7esel3qlrm5yd.onion" />
 	<link rel="stylesheet" href="{{ "css/styles.css" | relURL }}">
