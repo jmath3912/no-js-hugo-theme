@@ -35,8 +35,16 @@ blockquote {
 	border-left: 0.25em solid #CCC;
 }
 
+hr {
+	border: 1px solid rgb(185, 185, 185);
+}
+
 .header {
 	background-image: url(../../images/header-bg-light.jpg);
+}
+
+.links, .links li {
+	border-color: rgb(211, 211, 211);
 }
 
 .main {
