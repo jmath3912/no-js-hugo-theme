@@ -5,6 +5,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width">
+	<meta name="fediverse:creator" content="@cpxducky@infosec.exchange">
 {{ if .Site.Params.noindex }}
 	<meta name="robots" content="noindex" /> 
 {{ end }}
@@ -63,7 +64,7 @@
 {{- if .Site.Params.FooterText }}
 	<hr class="dont-show">
 	<footer class="footer">
-		<p>{{ .Site.Params.FooterText | markdownify }}</p>
+		<p>{{ .Site.Params.FooterText | markdownify }}<a rel='me' href='https://infosec.exchange/@cpxducky'></a></p>
 	</footer>
 {{- end }}
 </body>
